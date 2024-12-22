@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="output.css">
+    <script src="now.js" defer></script>
+
+    <title>Student Registration System</title>
+</head>
+<body style="background-image: url(https://cdn.shopify.com/s/files/1/0101/2750/7515/files/Fountain_Pen_Nib.jpg?v=1676403871)" class="font-sans ">
+
+    <div class="max-h-screen overflow-y-auto border-1 p-4">
+        
+        <!-- Heading of the WebPage -->
+
+        <center><h1 class="text-3xl pt-12 text-purple-600 pl-12 font-bold text-ellipsis "> STUDENT REGISTRATION FORM </h1></center>
+        <div class="flex">
+
+            <div class="p-4 flex justify-start pl-10">
+                <div class="container-form bg-gradient-to-tl from-slate-200 to-blue-400 hover:bg-gradient-to-t hover:from-pink-500 hover:to-yellow-100 p-10 border-2 shadow-black border-black rounded-xl flex justify-start items-start w-[50vmin]">
+                    
+                    <!-- Starting of the Registration Form -->
+
+                    <form id="form" class="flex flex-col gap-2 w-full">
+                        <label for="sname">Student Name :</label>
+                        <input type="text" id="sname" name="sname" class="field" required>
+            
+                        <label for="sid">Student ID :</label>
+                        <input type="text" id="sid" name="sid" class="field" required>
+            
+                        <label for="sclass">Class :</label>
+                        <input type="number" id="sclass" name="sclass" class="field" required>
+            
+                        <label for="sru">School / University :</label>
+                        <input type="text" id="sru" name="sru" class="field" required>
+            
+                        <label for="seid">Email ID :</label>
+                        <input type="email" id="seid" name="seid" class="field" required>
+            
+                        <label for="scn">Contact Number :</label>
+                        <input type="number" id="scn" name="scn" class="field" required>
+            
+                        <div id="btndiv" class="flex justify-center">
+                            <button id="btn" type="submit" class="bg-gradient-to-br from-blue-200 to-pink-500 hover:bg-gradient-to-br hover:from-blue-500 hover:to-blue-600 py-2 px-4 rounded-lg mt-4">Submit</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+            <!-- Description of the Webpage -->
+
+            <div class="flex items-center justify-center h-screen">
+                <div class="text-pink-500 font-semibold p-5 flex flex-col-reverse items-center">
+                    <p class="text-center text-3xl">Register your details and submit here..
+                        THANK YOU ! 
+                    </p><br>
+                    <p class="text-center text-md text-2xl">Administration will reach you through your Name , ID , Contact Number and Email for the Confirmation .</p>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- Registered Student Details Table -->
+
+        <div class="container-details flex justify-center">
+            <table class="border-black border-2 bg-gradient-to-t from-yellow-400 to-yellow-100 rounded-lg p-10 w-[90%]">
+                <thead>
+                    <tr>
+                        <th class="tablefield">Student Name</th>
+                        <th class="tablefield">Student ID</th>
+                        <th class="tablefield">Class</th> 
+                        <th class="tablefield">School / University</th>
+                        <th class="tablefield">Email ID</th>
+                        <th class="tablefield">Contact Number</th>
+                        <th class="tablefield">Edit / Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- Rows will be added dynamically -->
+                    <!-- Rows contain data of registered Students -->
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    <br>
+    <br>
+</body>
+</html>
